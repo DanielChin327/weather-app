@@ -1,0 +1,26 @@
+body {
+  background: #121212;
+}
+
+h1 h2 p{
+  color: #fff
+}
+
+.card {
+  background: linear-gradient(135deg, #333333, #444444);
+}
+
+.search input {
+  background: #333333;
+  color: #ffffff;
+}
+
+.search button {
+  background: #333333;
+}
+
+.weather {
+  color: #ffffff;
+}
+
+/* Add other dark mode specific styles here */
