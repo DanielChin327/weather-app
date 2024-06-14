@@ -43,3 +43,17 @@ async function checkWeather(city){
 searchBtn.addEventListener("click", ()=> {
   checkWeather(searchBox.value);
 })
+
+
+const toggleButton = document.getElementById("toggle-dark-mode");
+const darkModeCSS = document.getElementById("dark-mode-css");
+
+toggleButton.addEventListener("click", () => {
+  if (darkModeCSS.disabled) {
+    darkModeCSS.disabled = false;
+    toggleButton.textContent = "Light Mode";
+  } else {
+    darkModeCSS.disabled = true;
+    toggleButton.textContent = "Dark Mode";
+  }
+});
