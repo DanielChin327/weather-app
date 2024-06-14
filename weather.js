@@ -44,6 +44,12 @@ searchBtn.addEventListener("click", ()=> {
   checkWeather(searchBox.value);
 })
 
+searchBox.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    checkWeather(searchBox.value);
+  }
+});
+
 
 const toggleButton = document.getElementById("toggle-dark-mode");
 const darkModeCSS = document.getElementById("dark-mode-css");
