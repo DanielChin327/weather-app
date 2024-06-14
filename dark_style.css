@@ -1,17 +1,29 @@
 body {
   background: #121212;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 h1 h2 p{
   color: #fff
 }
 
+#toggle-dark-mode{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #fff;
+  color: #333333
+}
+
+
 .card {
   background: linear-gradient(135deg, #333333, #444444);
 }
 
 .search input {
-  background: #333333;
+  background: #222;
   color: #ffffff;
 }
 
