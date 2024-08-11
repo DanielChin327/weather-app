@@ -13,6 +13,7 @@ async function checkWeather(city){
     }
     else{
     var data = await response.json();
+    console.log(data)
     var f = Math.round(((data.main.temp) * 9/5) + 32)
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c" +` / ${f}°f`;
