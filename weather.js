@@ -7,6 +7,7 @@ const weatherIcon = document.querySelector(".weather-icon");
 
 
 // ex. https://api.openweathermap.org/data/2.5/weather?units=metric&q=tokyo&appid=89638d41ac4d76e85c0eca18872b79bb
+// ex. api.openweathermap.org/data/2.5/forecast?q=tokyo&appid=89638d41ac4d76e85c0eca18872b79bb
 
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
